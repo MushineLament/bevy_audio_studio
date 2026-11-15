@@ -1,0 +1,23 @@
+[package]
+name = "bevy_audio_studio"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy = { version = "0.20.0", features = [
+    "2d",
+    "bevy_feathers",
+    "debug",
+    "serialize",
+] }
+serde = { version = "1.0.229", features = ["derive"] }
+symphonium = "0.13.0"
+
+bevy_waveform = { path = "D:/Mushine/VScode/bevy_waveform" }
+
+anyhow = "1.0.104"
+assert_no_alloc = "1.1.2"
+cpal = "0.18.2"
+fundsp = "0.23.0"
+funutd = "0.16.0"
+ringbuf = "0.6.0"
